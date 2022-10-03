@@ -1,5 +1,14 @@
 from __future__ import division
-import curses,threading,time,random
+import threading,time,random
+
+try:
+   import curses
+except:
+   import os
+   os.system("pip install windows-curses")
+   import curses
+
+
 """
   _____   _
  /o    \_/ |
